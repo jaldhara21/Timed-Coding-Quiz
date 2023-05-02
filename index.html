@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timed Coding Quiz</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!--added header for view high score and timer -->
+    <header>
+        <h1 id="view-high-scores">View High Scores</h1>
+        <h1 class="timer">time: <span id="timer"></span></h1>
+    </header>
     <!--create question container and answer button section -->
-    <div class="container">
-        <div id="question-container" class="hide">
-         <div id="question">Question</div>
-         <div id="answer-buttons" class="btn-container">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
-         </div>
-        </div>
+    
         <!--- create start and next button section-->
         <div>
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="go-back" class="btn">Go Back</button>
+            <button id="clear-high-score" class="btn">Clear High Scores</button>
         </div>
+
+<!--create correct and wrong section-->
+    <div id="correct" class="hide" >
+        <h3>Correct : !</h2>
+    </div>
+    <div  id="wrong" class="hide" >
+        <h3>Wrong : </h2>
     </div>
 </body>
 </html>
