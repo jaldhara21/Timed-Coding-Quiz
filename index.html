@@ -8,25 +8,59 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <!--Added header for view high score and timer -->
-    <header>
-        <h1 id="view-high-scores">View High Scores</h1>
-        <h1 class="timer">time: <span id="timer"></span></h1>
+    <!--Create header for view high score and timer -->
+    <header class="scores">
+        <a id="view-high-scores">View High Scores</a>
+        <div id="timer" class="timer">Time: 80</div>
     </header>
-    <!--create question container and answer button section -->
-    
-        <!--- create start and next button section-->
-        <div>
-            <button id="go-back" class="btn">Go Back</button>
-            <button id="clear-high-score" class="btn">Clear High Scores</button>
+    <main>
+        <!-- Create section that contains heading, some criteria related quiz and start quiz-->
+        <section id="start-container" class="start-quiz">
+            <h1>Javascript Quiz Challenge</h1>
+            <p>Try to answer the folloing code-related quistions within the 80 seconds.Keep in mind that incorrect answer will penalize your score time by ten seconds.Click start when you are ready.</p>
+             <div class="controls">
+                <button id="start-btn" class="start-btn">Start Quiz</button>
+             </div>
+        </section>
+    <!--  Create section that contains question and answers follow by check answer and next button. -->
+        <section id="qus-container" class="hide">
+            <h1 id="Question">Question</h1>
+            <div id="answer-btns" class="btn-grid">
+            <button class="button">Answer 1</button>
+            <button class="button" >Answer 2</button>
+            <button class="button">Answer 3</button>
+            <button class="button">Answer 4</button>
         </div>
+        <h2 id="ckeck-ans" class="correct-wrong-hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>    
+        </section>
+    <!--  Create section that includes form for sumbit form, label,input for initial and submit button-->
+        <section id="score-container" class="hide">
+            <form id="submit-form">
+                <h3 id="your-score"></h3>
+                <label id="initials-label">
+                    Enter initial to save your score:
+                </label>
+                <input type="text" id="initial-field" palceholder="Enter Intials">
+                <button id="submit-btn">Submit</button>
+             </form>
+        </section>   
+ <!--- Create button to go back and high score section -->
+    <section id="highscores" class="highscore-container hide">
+        <div id="high-scores">
+            <h4 class="center">Highscoreboard</h4>
+            <div id="highscore" class="highscore list"></div>
 
-<!--create correct and wrong section-->
-    <div id="correct" class="hide" >
-        <h3>Correct : !</h2>
+        <div class="controls">
+            <button id="go-back">Go Back</button>
+            <button id="clear-high-score">Clear High Scores</button>
+        </div>
     </div>
-    <div  id="wrong" class="hide" >
-        <h3>Wrong : </h2>
-    </div>
+    </section>
+    </main>  
+
+
 </body>
 </html>
