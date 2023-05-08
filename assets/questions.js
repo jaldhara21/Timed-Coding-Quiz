@@ -4,7 +4,7 @@
 var questions = [
     {
         question:"Which of the following is not a primitive data type in JavaScript?"
-        answers:[
+        answer: [
             { text: "Number", correct: false},
             { text: "String", correct: false},
             { text: "Boolean", correct: false},
@@ -13,7 +13,7 @@ var questions = [
     },
     {
       question: " Which of the following attribute can hold the JavaScript version?"
-      answers:[
+      answer:[
         { text: "LANGUAGE", correct: true},
         { text: "SCRIPT", correct: false},
         {text: "VERSION", correct: false},
@@ -22,7 +22,7 @@ var questions = [
     },
     {
         question: "What are variables used for in JavaScript Programs?"
-        answers:[
+        answer:[
             { text: " Storing numbers, dates, or other values", correct: true},
             { text: "Varying randomly", correct: false},
             {text: "Causing high-school algebra flashbacks", correct: false},
@@ -31,7 +31,7 @@ var questions = [
     },
     {
         question: "Inside which HTML element do we put the JavaScript?"
-        answers:[
+        answer:[
             { text: "<js>" , correct: false},
             { text: "<scripting>", correct: false},
             {text: "<script>", correct: true},
@@ -40,7 +40,7 @@ var questions = [
     },
     {
         question: "Which of the following best describes JavaScript?"
-        answers:[
+        answer:[
             { text: "a low-level programming language" , correct: false},
             { text: "a scripting language precompiled in the browser", correct: false},
             {text: "a compiled scripting language", correct: false},
