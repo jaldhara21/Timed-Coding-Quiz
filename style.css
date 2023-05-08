@@ -58,3 +58,37 @@
     align-items: center;
     margin: 10px;
   }
+  /* input style apply */
+  input[type="text"]{
+    padding: 9px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid;
+  }
+  /* wrapper for button style apply*/
+  .controls{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  /*highscore page style apply*/
+  .highscore {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .name-div,
+  .score-div {
+    flex: 1 35%;
+    padding: 10px 0;
+    border: 1px solid;
+  }
+  /* Media query for mobile phones and small.This will be applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+  .btn-grid {
+    grid-template-columns: repeat(1, auto);
+    gap: 0;
+    margin: 0;
+  }
+}
