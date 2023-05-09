@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timed Coding Quiz</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
     <!--Create header for view high score and timer -->
     <header class="scores">
-        <a id="view-high-scores">View High Scores</a>
-        <div id="timer" class="timer">Time: 75</div>
+      <a id="view-high-scores">View High Scores</a>
+      <div id="timer" class="timer">Time: 75</div>
     </header>
     <main>
-        <!-- Create section that contains heading, some criteria related quiz and start quiz-->
-        <section id="start-container" class="start-quiz">
-            <h1>Javascript Quiz Challenge</h1>
-            <p>Try to answer the folloing code-related quistions within the 75 seconds.Keep in mind that incorrect answer will penalize your score time by ten seconds.Click start when you are ready.</p>
-             <div class="controls">
-                <button id="start-btn" class="start-btn">Start Quiz</button>
-             </div>
-        </section>
-    <!--  Create section that contains question and answers follow by check answer and next button. -->
-        <section id="question-container" class="hide">
-            <h1 id="question">Question</h1>
-            <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn" >Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
+      <!-- Create section that contains heading, some criteria related quiz and start quiz-->
+      <section id="start-container" class="start-quiz">
+        <h1>Javascript Quiz Challenge</h1>
+        <p>
+          Try to answer the folloing code-related quistions within the 75
+          seconds.Keep in mind that incorrect answer will penalize your score
+          time by ten seconds.Click start when you are ready.
+        </p>
+        <div class="controls">
+          <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+      </section>
+      <!--  Create section that contains question and answers follow by check answer and next button. -->
+      <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
         </div>
         <h2 id="check-answer" class="correct-wrong-hide"></h2>
         <div class="controls">
-            <button id="next-btn" class="next-btn hide">Next</button>
-        </div>    
-        </section>
-    <!--  Create section that includes form for sumbit form, label,input for initial and submit button-->
-        <section id="score-container" class="hide">
-            <form id="submit-form">
-                <h3 id="your-score"></h3>
-                <label id="initials-label">
-                    Enter initial to save your score:
-                </label>
-                <input type="text" id="initial-field" palceholder="Enter Intials">
-                <button id="submit-btn">Submit</button>
-             </form>
-        </section>   
- <!--- Create button to go back and high score section -->
-    <section id="highscores" class="highscore-container hide">
+          <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+      </section>
+      <!--  Create section that includes form for sumbit form, label,input for initial and submit button-->
+      <section id="score-container" class="hide">
+        <form id="submit-form">
+          <h3 id="your-score"></h3>
+          <label id="initials-label"> Enter initial to save your score: </label>
+          <input type="text" id="initial-field" palceholder="Enter Intials" />
+          <button id="submit-btn">Submit</button>
+        </form>
+      </section>
+      <!--- Create button to go back and high score section -->
+      <section id="highscores" class="highscore-container hide">
         <div id="high-scores">
-            <h4 class="center">Highscoreboard</h4>
-            <div id="highscore" class="highscore highscore-list"></div>
+          <h4 class="center">Highscoreboard</h4>
+          <div id="highscore" class="highscore highscore-list"></div>
 
-        <div class="controls">
+          <div class="controls">
             <button id="goback-btn">Go Back</button>
             <button id="clearhighscore-btn">Clear High Scores</button>
+          </div>
         </div>
-    </div>
-    </section>
-    </main>  
-   
-  <script src="assets/questions.js"></script>
-  <script src="assets/logic.js"></script>
-</body>
+      </section>
+    </main>
+
+    <script src="assets/questions.js"></script>
+    <script src="assets/logic.js"></script>
+  </body>
 </html>

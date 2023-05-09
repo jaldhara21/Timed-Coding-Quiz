@@ -1,78 +1,85 @@
-
 * {
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  :root{
-    --color:rgb(236, 135, 236);
-    font-size: 60%;
-    --background-color:#f4f0f0;
-    --box-background-color:rgb(241, 18, 171);
-  }
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  body {
-    min-height: 100vh;
-    place-items: center;
-    background: var(--background-color);
-  }
+:root {
+  --color: rgb(236, 135, 236);
+  font-size: 60%;
+  --background-color: #f4f0f0;
+  --box-background-color: rgb(241, 18, 171);
+}
 
-   /* given style to Header */
-   header {
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 0;
-    width: 84%;
-  }
-  
-  .scores a,
- .timer {
-    font-size: 30px;
-    color: var(--color);
-    display: inline;
-    padding-left: 50px;
-  }
-  .scores a{
-    cursor: pointer;
-  }
-  .scores a:hover {
-     color: var(--color);
-  }
-  /* Given Style to start quiz section */
-  .start-quiz {
-    text-align: center;
-    padding: 20px;
-    width: 50%;
-    margin: auto;
-  }
-  h1 {
-     margin-bottom: 10px;
-     font-size: 30px;
-  }
-  p{
-    font-size: 20px;
-  }
-   h2 {
-    margin: 20px 0;
-    font-style: italic;
-    text-align: center;
-   } 
-  
-  .controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-  }
-  /* Given style on button*/
-  .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px;
-  }
-  button {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  min-height: 100vh;
+  place-items: center;
+  background: var(--background-color);
+}
+
+/* given style to Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+  width: 84%;
+}
+
+.scores a,
+.timer {
+  font-size: 30px;
+  color: var(--color);
+  display: inline;
+  padding-left: 50px;
+}
+
+.scores a {
+  cursor: pointer;
+}
+
+.scores a:hover {
+  color: var(--color);
+}
+
+/* Given Style to start quiz section */
+.start-quiz {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+h2 {
+  margin: 20px 0;
+  font-style: italic;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Given style on button*/
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
   border: none;
   width: auto;
   overflow: visible;
@@ -81,50 +88,58 @@
   border-radius: 10px;
   font-size: large;
   margin: 10px;
-  color:rgb(68, 5, 141);
+  color: rgb(68, 5, 141);
   cursor: pointer;
-  }
-  button:hover {
-    background-color: var(--background-color);
-  }
-  .hide {
-    display: none;
-  }
-  .btn.correct {
-    background-color: green;
-  }
-  .btn.wrong {
-    background-color: red;
-  }
+}
 
-  /* input style apply */
-  input[type="text"]{
-    padding: 9px;
-    margin: 8px 0;
-    border-radius: 5px;
-    box-sizing: border-box;
-    border: 1px solid;
-  }
-  /* wrapper for button style apply*/
-  .controls{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-  }
-  /*highscore page style apply*/
-  .highscore {
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  .name-div,
-  .score-div {
-    flex: 1 35%;
-    padding: 10px 0;
-    border: 1px solid;
-  }
-  /* Media query for mobile phones and small.This will be applied on any screen smaller than 575px */
+button:hover {
+  background-color: var(--background-color);
+}
+
+.hide {
+  display: none;
+}
+
+.btn.correct {
+  background-color: green;
+}
+
+.btn.wrong {
+  background-color: red;
+}
+
+/* input style apply */
+input[type="text"] {
+  padding: 9px;
+  margin: 8px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+/* wrapper for button style apply*/
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/*highscore page style apply*/
+.highscore {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.name-div,
+.score-div {
+  flex: 1 35%;
+  padding: 10px 0;
+  border: 1px solid;
+}
+
+/* Media query for mobile phones and small.This will be applied on any screen smaller than 575px */
 @media screen and (max-width: 575px) {
   .btn-grid {
     grid-template-columns: repeat(1, auto);
