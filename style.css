@@ -8,6 +8,7 @@
     --color:rgb(236, 135, 236);
     font-size: 60%;
     --background-color:#f4f0f0;
+    --box-background-color:rgb(241, 18, 171);
   }
 
   body {
@@ -50,13 +51,18 @@
   }
   p{
     font-size: 20px;
-    
   }
+   h2 {
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+   } 
+  
   .controls {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
   }
   /* Given style on button*/
   .btn-grid {
@@ -71,11 +77,11 @@
   width: auto;
   overflow: visible;
   padding: 10px;
-  background-color: var(--background-color);
+  background-color: var(--box-background-color);
   border-radius: 10px;
   font-size: large;
   margin: 10px;
-  color: var(--color);
+  color:rgb(68, 5, 141);
   cursor: pointer;
   }
   button:hover {
@@ -102,6 +108,7 @@
   /* wrapper for button style apply*/
   .controls{
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 10px 0;
   }
