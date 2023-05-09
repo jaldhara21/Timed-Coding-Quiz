@@ -26,7 +26,7 @@ For this challenge, build a timed coding quiz with multiple-choice questions. Th
 </ul>
 
 ## Deployed page
-
+https://jaldhara21.github.io/Timed-Coding-Quiz/ 
 
 ## Screen shot
 ![Screen Shot 2023-05-09 at 1 56 29 PM](https://github.com/jaldhara21/Timed-Coding-Quiz/assets/129098874/f1c59291-a2fc-4ce8-8d74-825ea4373db5)
